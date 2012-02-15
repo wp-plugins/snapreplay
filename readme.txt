@@ -2,9 +2,9 @@
 Plugin Name: SnapReplay
 Donate: http://snapreplay.com/
 Contributors: cd34
-Tags: 
+Tags: widget, widgets, social, photo, photos
 Requires at least: 2.6
-Tested up to: 3.3
+Tested up to: 3.3.1
 Stable tag: 0.2
 
 This widget allows you to specify an event or venue on SnapReplay to follow and publishes the latest picture.
