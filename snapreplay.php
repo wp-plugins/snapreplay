@@ -4,7 +4,7 @@ Plugin Name: SnapReplay
 Plugin URI: http://code.google.com/p/wordpress-snapreplay/
 Description: Display latest Event/Venue picture in sidebar
 Author: Chris Davies
-Version: 0.1
+Version: 0.2
 Author URI: http://cd34.com/
 
 Update Event Title on page
@@ -86,7 +86,6 @@ add_action('wp_footer', 'sr_jscript');
 
 function sr_jscript() {
 ?>
-<script type="text/javaScript" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 <script type="text/javaScript" src="http://stream.snapreplay.com/socket.io/socket.io.js"></script>
 <script type="text/javaScript">
 <!--
@@ -95,11 +94,11 @@ function sr_jscript() {
   socket.on('s-<?php echo get_option('snapreplay-stream-id'); ?>', function (data) {
     if (data['data'].content_type == "text") {
       content = data['data'].display_name + ' says, ' + data['data'].content;
-      $('#top_placeholder').html(content);
+      document.getElementById('top_placeholder').innerHTML=content;
     }
     if (data['data'].content_type == "image") {
       content='<img src="http://csnap.colocdn.com/pics/' + data['data'].file_name + '"/>';
-      $('#top_placeholder').html(content);
+      document.getElementById('top_placeholder').innerHTML=content;
     }
   });
 // -->
