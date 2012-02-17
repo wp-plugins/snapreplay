@@ -11,7 +11,9 @@ This widget allows you to specify an event or venue on SnapReplay to follow and 
 
 == Description ==
 
-This plugin uses [SnapReplay](http://snapreplay.com/) 
+This plugin uses [SnapReplay](http://snapreplay.com/) and displays the latest
+content uploaded to an Event. Photos or Images from that Event or Stream
+update on your side, as they are uploaded to SnapReplay.
 
 == Installation ==
 
