@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: SnapReplay
-Plugin URI: http://code.google.com/p/wordpress-snapreplay/
+Plugin URI: http://code.google.com/p/cd34-wordpress/wiki/SnapReplay
 Description: Display latest Event/Venue picture in sidebar
 Author: Chris Davies
 Version: 0.2
